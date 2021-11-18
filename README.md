@@ -11,26 +11,26 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            operaciones tt = new operaciones();//creando objeto de nuestra clase donde se encutran todos los metodos
-            tt.metodomenu();  //invocando el metodo donde se encuentra menu
+            operaciones tt = new operaciones();
+            tt.metodomenu();  
           
         }
     }
 }
 
 
-class operaciones//clase la cual contiene todos los metodos
+class operaciones
 {
-    public int op = 0; //declaracion de variables
+    public int op = 0; 
     public double v1 = 0, v2 = 0;
    
 
-    public void metodomenu()//este metodo contiene las opciones a elegir en el menu
-    {//apertura del metodo
+    public void metodomenu()
+    {
 
         do
         {
-            Console.Clear();//limpiar pantalla 
+            Console.Clear();
 
             Console.WriteLine("Digite el numero de la operacion a realizar");
             Console.WriteLine("1.Area de un Triangulo");
@@ -40,11 +40,11 @@ class operaciones//clase la cual contiene todos los metodos
 
         } while (op != 1 && op != 2 && op != 3);//mientras que no digite una de las opciones en el menu se repetira
 
-        if (op == 1) { uno(); }//si digiga 1 entonces nos dirigimos al metodo uno
-        if (op == 2) { dos(); }//si digiga 2 entonces nos dirigimos al metodo dos
-        if (op == 3) { tres(); }//si digiga 3 entonces nos dirigimos al metodo tres
+        if (op == 1) { uno(); }
+        if (op == 2) { dos(); }
+        if (op == 3) { tres(); }
 
-    }//cierre de la clase menu donde nos pide opcion a evaluar
+    }
 
 
     public void uno()
