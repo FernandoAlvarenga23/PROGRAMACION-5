@@ -1,0 +1,69 @@
+    #FUNCION AREA FIGURAS
+    public static void Main()
+{
+    while(true)
+    {
+        Console.WriteLine("Ingrese codigo area calcular:");
+        int TipoArea = Int32.Parse(Console.ReadLine());
+
+        switch (TipoArea)
+        {
+            case 1: 
+                AreaReactangulo();
+                break;
+            case 2: 
+                AreaTriangulo();
+                break;
+        }
+
+        Console.WriteLine("Desea Calcular otra arear ? S/N");
+        string respuesta = Console.ReadLine();
+
+        if(respuesta != "S")
+        {
+            break;
+        }
+    }
+}
+}
+private static void  AreaCirculo()
+{
+    double area = 0, radio = 0;
+
+    
+            Console.WriteLine("Encontrar el Area de un Circulo.");
+            
+            Console.Write("Ingrese el radio del circulo: ");
+            
+            radio = Int32.Parse(Console.ReadLine());
+
+            area = radio * radio * 3.1415;
+
+            Console.WriteLine("El Area del Circulo: " + area);
+}
+
+private static void AreaRectangulo()
+{
+    double area = 0, b = 0, h = 0;
+    Console.WriteLine("Encontrar el Area de un Rectangulo.");
+    Console.WriteLine("Ingrese la Base de rectangulo");
+    b = Int32.Parse(Console.ReadLine()); 
+    Console.WriteLine("Ingrese la altura del Rectangulo");
+    h = Int32.Parse(Console.ReadLine());
+    Area = b * h; 
+    Console.WriteLine("El Area del Rectangulo: " + area); break;
+}
+
+private static void  AreaTriangulo()
+{
+    double Area = 0, b = 0, h = 0;
+    Console.WriteLine("Encontra el Area de un Triangulo");
+    Console.WriteLine("Ingrese la base del Triangulo");
+    b = Int32.Parse(ConsoleReadLine());
+    Console.WriteLine("Ingrese la Altura del Triangulo");
+    h = Int32.Parse(Console.ReadLine());
+    area = (b * h) / 2;
+    Console.WriteLine("El Area del Triangulo" + area); break;
+}
+  }
+}
