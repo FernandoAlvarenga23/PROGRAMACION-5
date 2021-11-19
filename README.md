@@ -1,4 +1,4 @@
-# PROGRAMACION-5
+# calcular el área de un círculo, de un triangulo y un rectangulo
 using System;
 using System.Collections.Generic;
 using System.Linq;
