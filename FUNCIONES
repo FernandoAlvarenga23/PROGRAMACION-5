@@ -3,15 +3,18 @@
 {
     while(true)
     {
-        Console.WriteLine("Ingrese codigo area calcular:");
+        Console.WriteLine("Ingrese el numero de la opcion a calcular:1) CIRCULO, 2) RECTANGULO, 4) TRIANGULO");
         int TipoArea = Int32.Parse(Console.ReadLine());
 
         switch (TipoArea)
         {
             case 1: 
-                AreaReactangulo();
+                  AreaCirculo();
                 break;
             case 2: 
+                AreaReactangulo();
+                break;
+            case 3: 
                 AreaTriangulo();
                 break;
         }
@@ -30,15 +33,10 @@ private static void  AreaCirculo()
 {
     double area = 0, radio = 0;
 
-    
             Console.WriteLine("Encontrar el Area de un Circulo.");
-            
             Console.Write("Ingrese el radio del circulo: ");
-            
             radio = Int32.Parse(Console.ReadLine());
-
             area = radio * radio * 3.1415;
-
             Console.WriteLine("El Area del Circulo: " + area);
 }
 
@@ -65,5 +63,8 @@ private static void  AreaTriangulo()
     area = (b * h) / 2;
     Console.WriteLine("El Area del Triangulo" + area); break;
 }
+  }
+}
+
   }
 }
